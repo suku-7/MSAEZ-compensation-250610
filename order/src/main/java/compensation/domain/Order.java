@@ -47,20 +47,9 @@ private String address;
 
     @PostPersist
     public void onPostPersist(){
-    Inventory inventory = OrderApplication.applicationContext
-        .getBean(compensation.external.InventoryService.class)
-        .checkStock(get??);
-
 
         OrderPlaced orderPlaced = new OrderPlaced(this);
-        orderPlaced.publishAfterCommit();
-
-
-
-        OrderCancelled orderCancelled = new OrderCancelled(this);
-        orderCancelled.publishAfterCommit();
-
-    
+        orderPlaced.publishAfterCommit();   
     }
 
     public static OrderRepository repository(){
@@ -72,30 +61,18 @@ private String address;
 
 
 //<<< Clean Arch / Port Method
-    public static void updateStatus(OutOfStock outOfStock){
-        
-        //implement business logic here:
-        
-        /** Example 1:  new item 
-        Order order = new Order();
-        repository().save(order);
 
-        */
-
-        /** Example 2:  finding and process
-        
-
-        repository().findById(outOfStock.get???()).ifPresent(order->{
+    public static void updateStatus(OutOfStock outOfStock) {
+        repository().findById(outOfStock.getOrderId()).ifPresent(order ->{
             
-            order // do something
+            order.setStatus("OrderCancelled");
             repository().save(order);
+            // OrderCancelled orderCancelled = new OrderCancelled(this);
+            // orderCancelled.publishAfterCommit(); 
+        });
 
-
-         });
-        */
-
-        
     }
+
 //>>> Clean Arch / Port Method
 
 
