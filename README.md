@@ -1,11 +1,12 @@
+## Model
+# compensation-240313 ()
+https://labs.msaez.io/#/189596125/storming/compensation-250610
+
 ![스크린샷 2025-06-10 160115](https://github.com/user-attachments/assets/fc8c15e4-136e-4b64-928d-1eb8e1add395)
 ![스크린샷 2025-06-10 165619](https://github.com/user-attachments/assets/9abda9aa-06a8-4531-9939-7b5562d52259)
 ![스크린샷 2025-06-10 170617](https://github.com/user-attachments/assets/cd06eb61-828d-4274-82d4-f0423c8b5243)
 
-# 
 
-## Model
-www.msaez.io/#/courses/cna-full/2c7ffd60-3a9c-11f0-833f-b38345d437ae/compensation-2024
 
 ## Before Running Services
 ### Make sure there is a Kafka server running
