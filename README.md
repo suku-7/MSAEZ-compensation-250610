@@ -1,5 +1,5 @@
 ## Model
-# compensation-240313 ()
+# compensation-240313 (초과 주문에 대한 예외 처리 - Out of stock)
 https://labs.msaez.io/#/189596125/storming/compensation-250610
 
 ![스크린샷 2025-06-10 160115](https://github.com/user-attachments/assets/fc8c15e4-136e-4b64-928d-1eb8e1add395)
